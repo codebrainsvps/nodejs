@@ -1,0 +1,48 @@
+{
+  "name": "saks-nightwatch-smoketest",
+  "version": "0.0.0",
+  "engines": {
+    "node": "^8.9.0",
+    "npm": "^5.5.0"
+  },
+  "description": "Nightwatch.js smoketests for the banners.",
+  "keywords": [
+    "nightwatch",
+    "qa",
+    "end-to-end test",
+    "smoketest"
+  ],
+  "homepage": "https://github.com/saksdirect/saks-nightwatch-smoketest",
+  "license": "ISC",
+  "author": "HBC Digital",
+  "contributors": [
+    "Ben Poon <Ben.Poon@hbc.com>",
+    "Min Barnett <Min.Barnett@hbc.com>",
+    "Dhanya Menon <Dhanya.Menon@hbc.com>",
+    "Michael Mooring <Michael.Mooring@hbc.com>"
+  ],
+  "main": "dist/scripts/framework.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saksdirect/saks-nightwatch-smoketest.git"
+  },
+  "bugs": {
+    "url": "https://github.com/saksdirect/saks-nightwatch-smoketest/issues"
+  },
+  "scripts": {
+    "nightwatch": "nightwatch",
+    "test": "sh ./bin/test.sh",
+    "report": "node create-html-report.js"
+  },
+  "publishConfig": {
+    "registry": "https://hbc.jfrog.io/hbc/api/npm/hbc-virt-npm"
+  },
+  "devDependencies": {
+    "chromedriver": "^2.41.0",
+    "cucumber": "^5.0.1",
+    "cucumber-html-reporter": "^4.0.4",
+    "nightwatch": "^0.9.21",
+    "nightwatch-cucumber": "^9.1.3",
+    "selenium-server": "^3.14.0"
+  }
+}
